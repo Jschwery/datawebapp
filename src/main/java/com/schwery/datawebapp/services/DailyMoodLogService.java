@@ -7,5 +7,8 @@ import java.util.List;
 
 @Service
 public interface DailyMoodLogService {
-    List<DailyMoodLog> getDailyMoodLog(String id);
+
+
+
+    List<DailyMoodLog> getAllDailyMoods();
 }

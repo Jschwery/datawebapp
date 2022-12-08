@@ -19,7 +19,9 @@ public class DailyMoodLogServiceImpl implements DailyMoodLogService {
     DailyMoodLogRepository dailyMoodLogRepository;
 
     @Override
-    public List<DailyMoodLog> getDailyMoodLog(String id) {
-        return dailyMoodLogRepository.findById(Long.parseLong(id));
+    public List<DailyMoodLog> getAllDailyMoods() {
+        return dailyMoodLogRepository.findAll();
     }
+
+
 }
