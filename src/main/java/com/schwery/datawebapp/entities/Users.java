@@ -22,6 +22,10 @@ public class Users {
     @Id
     @Column(name = "User_ID")
     Long userID;
+    @Column(name = "User_Name")
+    String userName;
+    @Column(name = "User_Last_Name")
+    String userLastName;
 
 
 }

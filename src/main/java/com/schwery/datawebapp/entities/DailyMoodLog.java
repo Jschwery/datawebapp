@@ -17,7 +17,6 @@ public class DailyMoodLog {
 
     @Id
     @Column(name = "Mood_ID",
-            nullable = false,
             unique = true)
     @SequenceGenerator(name = "daily_mood_sequence",
                         sequenceName = "daily_mood_sequence",
@@ -39,5 +38,6 @@ public class DailyMoodLog {
     @JoinColumn(referencedColumnName = "User_ID")
     @ManyToOne
     Users user;
+
 
 }

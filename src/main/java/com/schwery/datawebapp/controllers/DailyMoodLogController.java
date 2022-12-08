@@ -22,13 +22,14 @@ public class DailyMoodLogController {
     @Qualifier("DailyMoodImpl")
     DailyMoodLogService dailyMoodLogService;
 
-    @GetMapping("/dailyMood/{id}")
-    public ResponseEntity<List<DailyMoodLog>> getAllDailyMoodLogs(@RequestParam (required = false) String length, @PathVariable String id){
-        if(length == null){
-            return ResponseEntity.ok(dailyMoodLogService.getDailyMoodLog(id));
-        }
-        switch (length.toUpperCase()){
-            case "WEEK" -> dailyMoodLogService.get
-        }
-
+//    @GetMapping("/dailyMood/{id}")
+//    public ResponseEntity<List<DailyMoodLog>> getAllDailyMoodLogs(@RequestParam(required = false) String length, @PathVariable String id) {
+//        if (length == null) {
+//            return ResponseEntity.ok(dailyMoodLogService.getDailyMoodLog(id));
+//        }
+//        switch (length.toUpperCase()) {
+////            case "WEEK" -> dailyMoodLogService.
+//        }
+//
+//    }
 }

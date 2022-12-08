@@ -1,21 +1,20 @@
+server:
+  port: 8082
+
 spring:
-  profiles: qa
+  profiles:
+    active: main
+---
+    spring:
+      profiles: main
+
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    password: Bearsfan580!
-    url: jdbc:mysql://localhost:3306/datawebappDB
-    username: root
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-welcome:
-  message: Welcome!
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-        exclude: "env,beans"
 
