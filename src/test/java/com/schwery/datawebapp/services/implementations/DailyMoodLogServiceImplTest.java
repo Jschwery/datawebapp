@@ -20,7 +20,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-@WebAppConfiguration
 @RunWith(SpringRunner.class)
 @SpringBootTest
 class DailyMoodLogServiceImplTest {
@@ -42,10 +41,7 @@ class DailyMoodLogServiceImplTest {
 
     @Test
     void getAllDailyMoods() {
-
         assertEquals(2, moodLogRepository.findAll().size());
     }
-
-
 
 }

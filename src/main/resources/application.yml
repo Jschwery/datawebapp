@@ -2,11 +2,13 @@ server:
   port: 8082
 
 spring:
+  config:
+    activate:
+      on-profile: main
+---
+spring:
   profiles:
     active: main
----
-    spring:
-      profiles: main
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
